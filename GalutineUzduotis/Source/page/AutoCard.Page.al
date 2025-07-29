@@ -107,38 +107,3 @@ page 77004 "ZINUAuto Card"
 
 }
 
-
-
-/*
-                field(2; "Automobile No. Series";
-                    Code[20])
-        {
-            Caption = 'Automobile No. Series';
-                    DataClassification = CustomerContent;
-                    TableRelation = "No. Series";
-                }
-                field(3; "Rental Card Series";
-                    Code[20])
-        {
-            Caption = 'Rental Card Series';
-                    DataClassification = CustomerContent;
-                    TableRelation = "No. Series";
-                }
-                field(4; "Accessories Location";
-                    Code[10])
-        {
-            Caption = 'Accessories Location';
-                    DataClassification = CustomerContent;
-                    TableRelation = Location;
-                }
-            }
-
-    keys
-    {
-        key(PK; "Primary Key")
-        {
-            Clustered = true;
-        }
-    }
-}
-*/
