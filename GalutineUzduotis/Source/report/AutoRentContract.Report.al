@@ -1,14 +1,8 @@
 report 77000 "ZINUAuto Rent Contract"
 {
-    /*
-    DefaultLayout = RDLC;
-    RDLCLayout = './AutoRentContract.rdlc';
-    Caption = 'Auto Rent Contract';
-*/
     UsageCategory = ReportsAndAnalysis;
     ApplicationArea = All;
     DefaultRenderingLayout = LayoutName;
-    //PreviewMode = Normal;
 
     dataset
     {
@@ -52,29 +46,6 @@ report 77000 "ZINUAuto Rent Contract"
             column(CustomerName; CustomerName)
             {
             }
-
-
-            /* dataitem("Auto"; ZINUAuto)
-            {
-                DataItemLink = "No." = field("Auto No.");
-                column(Auto_Mark; "Mark")
-                {
-                    IncludeCaption = true;
-                }
-                column(Auto_Model; "Model")
-                {
-                    IncludeCaption = true;
-                }
-            } */
-
-            /* dataitem("Customer"; Customer)
-            {
-                DataItemLink = "No." = field("Customer No.");
-                column(Customer_Name; "Name")
-                {
-                    IncludeCaption = true;
-                }
-            } */
 
             dataitem("Auto Rent Line"; ZINUAutoRentLine)
             {
@@ -188,8 +159,6 @@ report 77000 "ZINUAuto Rent Contract"
     }
 
     var
-        //AutoMark: Text[100];
-        //AutoModel: Text[100];
         CustomerName: Text[100];
         RentalAmount: Decimal;
         ServicesAmount: Decimal;
